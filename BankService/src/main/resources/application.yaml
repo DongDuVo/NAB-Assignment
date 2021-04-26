@@ -1,0 +1,13 @@
+spring:  datasource:    url: jdbc:h2:~/data/demo
+    driver-class-name: org.h2.Driver
+    username: root
+    password: root
+  jpa:    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:      ddl-auto: update
+  h2:    console:      enabled: true
+      
+voucher-service:
+  url: http://localhost:9099/api/voucher
+  api-key: cd719eef-2cff-40ff-b966-f7fc9da065d1  
+

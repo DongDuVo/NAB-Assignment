@@ -1,0 +1,8 @@
+server:
+  port: 9099
+  
+delay-in-seconds:
+  min: 3
+  max: 120
+
+api-key: cd719eef-2cff-40ff-b966-f7fc9da065d1
