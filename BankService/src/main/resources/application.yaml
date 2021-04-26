@@ -6,8 +6,8 @@ spring:  datasource:    url: jdbc:h2:~/data/demo
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:      ddl-auto: update
   h2:    console:      enabled: true
-      
+thread-pool:  core-size: 10  max-size: 100  timeout-in-seconds: 10      
 voucher-service:
   url: http://localhost:9099/api/voucher
-  api-key: cd719eef-2cff-40ff-b966-f7fc9da065d1  
+  api-key: cd719eef-2cff-40ff-b966-f7fc9da065d1
 

@@ -7,6 +7,16 @@
 - package controller contains classes that are entry points to handle requests
 - package repo contains classes that makes requests to DB
 - package entity contains classes that defines mapping between DB tables and Java classes
+- package schedule contains classes that handle business logic in schedule
+
+## Database
+voucher (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  phone_number VARCHAR(250) NOT NULL,
+  voucher_code VARCHAR(250) NOT NULL,
+  created_date datetime NOT NULL,
+  processed boolean default false
+)
 
 ## Framework and libraries
 - Spring Boot, Spring Data JPA, Spring Security, Hibernate, H2

@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface VoucherRepository extends JpaRepository<Voucher, Long> {
 
     List<Voucher> findByPhoneNumber(String phoneNumber);
+    
+    List<Voucher> findByProcessedFalse();
 }

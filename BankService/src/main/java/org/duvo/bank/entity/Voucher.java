@@ -19,6 +19,7 @@ public class Voucher {
     private long id;
     private String phoneNumber;
     private String voucherCode;
+    private boolean processed = false;
     
     @CreationTimestamp
     private Instant createdDate;
@@ -46,5 +47,11 @@ public class Voucher {
     }
     public void setCreatedDate(Instant createdDate) {
         this.createdDate = createdDate;
+    }
+    public boolean isProcessed() {
+        return processed;
+    }
+    public void setProcessed(boolean processed) {
+        this.processed = processed;
     }
 }
